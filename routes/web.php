@@ -12,5 +12,6 @@
 */
 
 Route::get('posts', ['as' => 'posts.index', 'uses' => 'PostsController@index']);
+Route::get('posts/create', ['as' => 'posts.create', 'uses' => 'PostsController@create']);
+Route::post('posts/create', 'PostsController@store');
 Route::get('posts/{id}', ['as' => 'posts.show', 'uses' => 'PostsController@show']);
-

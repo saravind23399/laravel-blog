@@ -1,3 +1,6 @@
-<h1>{{ $post->title }}</h1>
-<p>{{ $post->body }}</p>
-<a href="{{ route('posts.index') }}">All posts</a>
+@extends('layouts.default')
+
+@section('content')
+  <h1>{{ $post->title }}</h1>
+  <p>{{ $post->body }}</p>
+@endsection
